@@ -28,5 +28,10 @@ public class Main {
         System.out.println("Le véhicule : " + voiture.getNom() + " possède une vitesse de : " + voiture.getVitesse() + " km/h.");
         System.out.println("Le véhicule : " + moto.getNom() + " possède une vitesse de : " + moto.getVitesse() + " km/h.");
         System.out.println("Le véhicule : " + autre.getNom() + " possède une vitesse de : " + autre.getVitesse() + " km/h.");
+
+        Voiture voiture1 = new Voiture("Bugatti Chiron", 4, 420);
+        Voiture voiture2 = new Voiture("Ferrari 458 Italia", 4, 325);
+
+        System.out.println(voiture1.plusRapide(voiture2));
     }
 }
