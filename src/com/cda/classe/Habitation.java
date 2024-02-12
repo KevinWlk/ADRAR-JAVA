@@ -4,8 +4,9 @@ public class Habitation {
     private String nom;
     private double longueur;
     private double largeur;
+    private int nbrEtage;
 
-    // Constructeur vide
+
     public Habitation() {
     }
 
@@ -14,6 +15,13 @@ public class Habitation {
         this.nom = nom;
         this.longueur = longueur;
         this.largeur = largeur;
+    }
+
+    public Habitation(String nom, double longueur, double largeur, int nbrEtage) {
+        this.nom = nom;
+        this.longueur = longueur;
+        this.largeur = largeur;
+        this.nbrEtage = nbrEtage;
     }
     public String getNom() {
         return nom;
@@ -37,8 +45,14 @@ public class Habitation {
         this.largeur = largeur;
     }
 
-    // Méthode surface
     public double surface() {
         return this.longueur * this.largeur;
+    }
+
+    public int getNbrEtage() {
+        return nbrEtage;
+    }
+    public void setNbrEtage(int nbrEtage) {
+        this.nbrEtage = nbrEtage;
     }
 }
