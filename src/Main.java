@@ -42,5 +42,12 @@ public class Main {
         Partie partie = new Partie(assassin, guerrier, 10);
 
         partie.lancerPartie();
+
+        Assassin assassin1 = new Assassin("Hitman",10,80, 9, 5);
+        Guerrier guerrier1 = new Guerrier("Legolas",100,90,5, 10);
+
+        Partie partie1 = new Partie(assassin1, guerrier1, 5);
+
+        partie1.lancerPartie();
     }
 }

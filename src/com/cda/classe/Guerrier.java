@@ -18,8 +18,8 @@ public class Guerrier extends Personnage {
 
     @Override
     public void attaquer(Personnage cible) {
-        double critChance = Math.random();
-        if (critChance <= 0.05) {
+        double critereChance = Math.random();
+        if (critereChance <= 0.05) {
             cible.setVie(cible.getVie() + bonusDefense);
         }
         super.attaquer(cible);

@@ -16,8 +16,6 @@ public class Personnage {
         this.defense = defense;
     }
 
-    // Getters et Setters
-
     public String getNom() {
         return nom;
     }
