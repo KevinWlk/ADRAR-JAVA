@@ -1,5 +1,5 @@
 import com.cda.classe.Habitation;
-import com.cda.classe.Voiture;
+import com.cda.classe.Vehicule;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,25 +13,25 @@ public class Main {
 
 
 
-        Voiture voiture = new Voiture("Peugeot", 4, 120);
-        Voiture moto = new Voiture("Yamaha", 2, 100);
-        Voiture autre = new Voiture("Vélo", 2, 20);
+        Vehicule Vehicule = new Vehicule("Peugeot", 4, 120);
+        Vehicule moto = new Vehicule("Yamaha", 2, 100);
+        Vehicule autre = new Vehicule("Vélo", 2, 20);
 
-        System.out.println("Le véhicule : " + voiture.getNom() + " est de type " + voiture.detect());
+        System.out.println("Le véhicule : " + Vehicule.getNom() + " est de type " + Vehicule.detect());
         System.out.println("Le véhicule : " + moto.getNom() + " est de type " + moto.detect());
         System.out.println("Le véhicule : " + autre.getNom() + " est de type " + autre.detect());
 
-        voiture.boost();
+        Vehicule.boost();
         moto.boost();
         autre.boost();
 
-        System.out.println("Le véhicule : " + voiture.getNom() + " possède une vitesse de : " + voiture.getVitesse() + " km/h.");
+        System.out.println("Le véhicule : " + Vehicule.getNom() + " possède une vitesse de : " + Vehicule.getVitesse() + " km/h.");
         System.out.println("Le véhicule : " + moto.getNom() + " possède une vitesse de : " + moto.getVitesse() + " km/h.");
         System.out.println("Le véhicule : " + autre.getNom() + " possède une vitesse de : " + autre.getVitesse() + " km/h.");
 
-        Voiture voiture1 = new Voiture("Bugatti Chiron", 4, 420);
-        Voiture voiture2 = new Voiture("Ferrari 458 Italia", 4, 325);
+        Vehicule Vehicule1 = new Vehicule("Bugatti Chiron", 4, 420);
+        Vehicule Vehicule2 = new Vehicule("Ferrari 458 Italia", 4, 325);
 
-        System.out.println(voiture1.plusRapide(voiture2));
+        System.out.println(Vehicule1.plusRapide(Vehicule2));
     }
 }

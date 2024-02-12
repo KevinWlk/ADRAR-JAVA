@@ -1,14 +1,14 @@
 package com.cda.classe;
 
-public class Voiture {
+public class Vehicule {
     private String nom;
     private int nbrRoue;
     private int vitesse;
 
-    public Voiture() {
+    public Vehicule() {
     }
 
-    public Voiture(String nom, int nbrRoue, int vitesse) {
+    public Vehicule(String nom, int nbrRoue, int vitesse) {
         this.nom = nom;
         this.nbrRoue = nbrRoue;
         this.vitesse = vitesse;
@@ -44,14 +44,14 @@ public class Voiture {
 
     public String detect() {
         if (nbrRoue == 4) {
-            return "voiture";
+            return "Vehicule";
         } else if (nbrRoue == 2) {
             return "moto";
         } else {
             return "autre";
         }
     }
-    public String plusRapide(Voiture autreVehicule) {
+    public String plusRapide(Vehicule autreVehicule) {
         if (this.vitesse > autreVehicule.getVitesse()) {
             return this.nom + " est plus rapide que " + autreVehicule.getNom();
         } else if (this.vitesse < autreVehicule.getVitesse()) {
