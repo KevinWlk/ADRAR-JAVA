@@ -11,4 +11,3 @@ public class Main {
         System.out.println("L'habitation : " + habitation3.getNom() + " a une surface de : " + habitation3.surface() + " m².");
     }
 }
-
