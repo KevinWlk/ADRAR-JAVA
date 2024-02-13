@@ -1,4 +1,4 @@
-package com.cda.classe;
+package com.cda.classe.heritage;
 
 public class Personnage {
     private String nom;

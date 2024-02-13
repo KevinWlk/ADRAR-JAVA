@@ -1,4 +1,6 @@
-import com.cda.classe.*;
+import com.cda.classe.Interface.*;
+import com.cda.classe.heritage.Personnage;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -34,20 +36,33 @@ public class Main {
 //
 //        System.out.println(Vehicule1.plusRapide(Vehicule2));
 
-//        Exerice 5
+//        Exercice 5
+//
+//        Assassin assassin = new Assassin("Ezio", 100, 20, 0, 0);
+//        Guerrier guerrier = new Guerrier("Aragorn", 100, 20, 0, 0);
+//
+//        Partie partie = new Partie(assassin, guerrier, 5);
+//
+//        partie.lancerPartie();
+//
+//        Assassin assassin1 = new Assassin("Hitman",10,80, 9, 5);
+//        Guerrier guerrier1 = new Guerrier("Legolas",100,90,5, 10);
+//
+//        Partie partie1 = new Partie(assassin1, guerrier1, 5);
+//
+//        partie1.lancerPartie();
+//
+//        System.out.println(assassin1.getNom()+" est mort avec "+assassin1.getVie()+" PV de vie.");
+//        System.out.println("Il reste "+guerrier1.getVie()+ " PV de vie à "+guerrier1.getNom() +".");
 
-        Assassin assassin = new Assassin("Ezio", 100, 10, 5, 8);
-        Guerrier guerrier = new Guerrier("Aragorn", 100, 20, 10, 50);
+        //Exercice 6
 
-        Partie partie = new Partie(assassin, guerrier, 10);
 
+        Batman batman = new Batman("Batman", 100, 50, 5);
+        Flash flash = new Flash("Flash", 100, 8, 3);
+        Superman superman = new Superman("Superman", 100, 12, 8);
+
+        Partie partie = new Partie(batman, flash, 5);
         partie.lancerPartie();
-
-        Assassin assassin1 = new Assassin("Hitman",10,80, 9, 5);
-        Guerrier guerrier1 = new Guerrier("Legolas",100,90,5, 10);
-
-        Partie partie1 = new Partie(assassin1, guerrier1, 5);
-
-        partie1.lancerPartie();
     }
 }

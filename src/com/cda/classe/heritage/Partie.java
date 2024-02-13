@@ -1,4 +1,4 @@
-package com.cda.classe;
+package com.cda.classe.heritage;
 
 public class Partie {
     private Personnage joueur1;
@@ -37,15 +37,15 @@ public class Partie {
 
     public void lancerPartie() {
         while (nbrTour > 0) {
-            joueur1.attaquer(joueur2);
-            joueur2.attaquer(joueur1);
-            nbrTour--;
+            this.joueur1.attaquer(this.joueur2);
+            this.joueur2.attaquer(this.joueur1);
+            this.nbrTour--;
 
-            if (joueur1.getVie() <= 0) {
-                System.out.println("Le gagnant est " + joueur2.getNom());
+            if (this.joueur1.getVie() <= 0) {
+                System.out.println("Le gagnant est " + this.joueur2.getNom());
                 return;
-            } else if (joueur2.getVie() <= 0) {
-                System.out.println("Le gagnant est " + joueur1.getNom());
+            } else if (this.joueur2.getVie() <= 0) {
+                System.out.println("Le gagnant est " + this.joueur1.getNom());
                 return;
             }
         }
