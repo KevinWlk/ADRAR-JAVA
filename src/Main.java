@@ -57,8 +57,8 @@ public class Main {
         //Exercice 6
 
 
-        Batman batman = new Batman("Batman", 100, 50, 5);
-        Flash flash = new Flash("Flash", 100, 60, 6);
+        Batman batman = new Batman("Batman", 10, 5, 2);
+        Flash flash = new Flash("Flash", 10, 5, 4);
         Superman superman = new Superman("Superman", 100, 100, 50);
         Superman superman1 = new Superman("Dark Superman", 100, 100, 50);
 
@@ -68,13 +68,13 @@ public class Main {
         System.out.println("La vie restante de "+flash.getNom() + " est de : "+flash.getVie()+ " PV.");
         System.out.println();
 
-        Partie partie2 = new Partie(batman, superman, 10);
+        Partie partie2 = new Partie(batman, superman, 4);
         partie2.lancerPartie();
         System.out.println("La vie restante de "+batman.getNom() + " est de : "+batman.getVie()+ " PV.");
         System.out.println("La vie restante de "+superman.getNom() + " est de : "+superman.getVie()+ " PV.");
         System.out.println();
 
-        Partie partie3 = new Partie(flash, superman, 10);
+        Partie partie3 = new Partie(flash, superman, 8);
         partie3.lancerPartie();
         System.out.println("La vie restante de "+flash.getNom() + " est de : "+flash.getVie()+ " PV.");
         System.out.println("La vie restante de "+superman.getNom() + " est de : "+superman.getVie()+ " PV.");

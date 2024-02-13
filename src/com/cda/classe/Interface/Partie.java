@@ -3,8 +3,8 @@ package com.cda.classe.Interface;
 import com.cda.classe.Heritage.Personnage;
 
 public class Partie {
-    private Personnage perso1;
-    private Personnage perso2;
+    private final Personnage perso1;
+    private final Personnage perso2;
     private int nbrTour;
 
     // Constructeur
@@ -36,11 +36,11 @@ public class Partie {
             this.perso2.attaquer(this.perso1);
             this.nbrTour--;
 
-            if (this.perso1.getVie() <= 0) {
-                System.out.println("Le gagnant est " + this.perso2.getNom());
-                return;
-            } else if (this.perso2.getVie() <= 0) {
+            if (this.perso2.getVie() <= 0) {
                 System.out.println("Le gagnant est " + this.perso1.getNom());
+                return;
+            } else if (this.perso1.getVie() <= 0) {
+                System.out.println("Le gagnant est " + this.perso2.getNom());
                 return;
             }
         }

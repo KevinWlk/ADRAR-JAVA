@@ -6,6 +6,7 @@ public class Personnage {
     private int attaque;
     private int defense;
 
+    public Personnage(){};
     public Personnage(String nom, int vie, int attaque, int defense) {
         this.nom = nom;
         this.vie = vie;
