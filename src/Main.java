@@ -1,5 +1,4 @@
 import com.cda.classe.Interface.*;
-import com.cda.classe.heritage.Personnage;
 
 
 public class Main {
@@ -59,10 +58,33 @@ public class Main {
 
 
         Batman batman = new Batman("Batman", 100, 50, 5);
-        Flash flash = new Flash("Flash", 100, 8, 3);
-        Superman superman = new Superman("Superman", 100, 12, 8);
+        Flash flash = new Flash("Flash", 100, 60, 6);
+        Superman superman = new Superman("Superman", 100, 100, 50);
+        Superman superman1 = new Superman("Dark Superman", 100, 100, 50);
 
-        Partie partie = new Partie(batman, flash, 5);
-        partie.lancerPartie();
+        Partie partie1 = new Partie(batman, flash, 10);
+        partie1.lancerPartie();
+        System.out.println("La vie restante de "+batman.getNom() + " est de : "+batman.getVie()+ " PV.");
+        System.out.println("La vie restante de "+flash.getNom() + " est de : "+flash.getVie()+ " PV.");
+        System.out.println();
+
+        Partie partie2 = new Partie(batman, superman, 10);
+        partie2.lancerPartie();
+        System.out.println("La vie restante de "+batman.getNom() + " est de : "+batman.getVie()+ " PV.");
+        System.out.println("La vie restante de "+superman.getNom() + " est de : "+superman.getVie()+ " PV.");
+        System.out.println();
+
+        Partie partie3 = new Partie(flash, superman, 10);
+        partie3.lancerPartie();
+        System.out.println("La vie restante de "+flash.getNom() + " est de : "+flash.getVie()+ " PV.");
+        System.out.println("La vie restante de "+superman.getNom() + " est de : "+superman.getVie()+ " PV.");
+        System.out.println();
+
+        Partie partie4 = new Partie(superman, superman1, 2);
+        partie4.lancerPartie();
+        System.out.println("La vie restante de "+superman.getNom() + " est de : "+superman.getVie()+ " PV.");
+        System.out.println("La vie restante de "+superman1.getNom() + " est de : "+superman1.getVie()+ " PV.");
+
+
     }
 }

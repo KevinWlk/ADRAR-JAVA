@@ -1,4 +1,4 @@
-package com.cda.classe.heritage;
+package com.cda.classe.Heritage;
 
 public class Guerrier extends Personnage {
     private int bonusDefense;
